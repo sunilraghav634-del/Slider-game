@@ -22,6 +22,8 @@ slider.addEventListener('input', () => {
         triggerPrank();
     }
 });
+slider.addEventListener('mousedown', () => { annoyingSound.play(); annoyingSound.pause(); });
+slider.addEventListener('touchstart', () => { annoyingSound.play(); annoyingSound.pause(); });
 
 function triggerPrank() {
     // 1. Play Break Sound
