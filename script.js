@@ -25,9 +25,10 @@ slider.addEventListener('input', () => {
 slider.addEventListener('mousedown', () => { annoyingSound.play(); annoyingSound.pause(); });
 slider.addEventListener('touchstart', () => { annoyingSound.play(); annoyingSound.pause(); });
 
-function triggerPrank() {
     // 1. Play Break Sound
-    breakSound.play();
+ // 1. Play Break Sound with Error Handling
+breakSound.play().catch(e => console.log("Sound error:", e));
+   breakSound.play();
 
     // 2. Start Annoying High Pitch Sound
     setTimeout(() => {
