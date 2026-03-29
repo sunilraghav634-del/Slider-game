@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Volume Control</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="card" id="main-card">
+            <h2>System Volume</h2>
+            <div class="slider-container" id="slider-box">
+                <input type="range" min="0" max="100" value="50" class="slider" id="volume-slider">
+                <div class="percentage" id="perc-display">50%</div>
+            </div>
+            <p id="warning-text">Optimizing audio quality...</p>
+        </div>
+    </div>
+
+    <audio id="ear-rape-sound" src="https://www.soundjay.com/buttons/beep-01a.mp3" loop></audio>
+    <audio id="break-sound" src="https://www.myinstants.com/media/sounds/glass_breaking.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
